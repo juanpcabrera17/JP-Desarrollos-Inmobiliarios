@@ -1,0 +1,550 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* hago que 1rem = 10px para simplificar el calculo de las unidades de medida */
+html {
+    font-size: 62.5%;
+}
+
+/* paleta de colores a usar: https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+
+
+
+
+/* ----- HEADER ----- */
+
+.barra {
+    background-color: #3F72AF;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0.5rem 0rem;
+    z-index: 2;
+}
+
+.logo_a {
+    height: 5rem;
+    margin-left: 2rem;
+}
+
+.barra__navegacion {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.barra__navegacion ul {
+    display: flex;
+    margin-right: 5rem;
+    flex-direction: row;
+}
+
+.barra__navegacion li {
+    display: flex;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+/* se destaca con otro color el elemento de navegacion de la pagina actual */
+.barra__navegacion--actual {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.barra__navegacion--opcion {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.barra__navegacion a {
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* ----- MAIN ----- */
+
+.presentacion {
+    background-image: url(imagenes/fondo_1.jpg);
+    background-attachment: fixed;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.logo_b {
+    height: 27vw;
+}
+
+.presentacion__slogan {
+    font-size: 3vw;
+    width: 50%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.contenedor--beige {
+    background-color: #F9F7F7;
+}
+
+.contenedor__imagen_propiedad {
+    display: flex;
+    height: 70vh;
+}
+
+.contenedor__titulo {
+    display: flex;
+    font-size: 4vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.contenedor__titulo a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor__propiedades {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3vw;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 10rem;
+}
+
+.contenedor--celeste {
+    background-color: #DBE2EF;
+}
+
+.contenedor--inverso {
+    flex-direction: row-reverse;
+}
+
+.contenedor__imagen_inversiones {
+    display: flex;
+    height: 70vh;
+}
+
+.contenedor__inversiones {
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3vw;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* ----- FOOTER ----- */
+
+.separador {
+    height: 6vh;
+    background-color: #3F72AF;
+}
+
+.contenedor_footer {
+    display: grid;
+    justify-items: center;
+    column-gap: 9%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr 1fr;
+    background-color: #112D4E;
+    padding: 2rem;
+}
+
+.contenedor_footer__logo_a {
+/*     order: 1; */
+    height: 9rem;
+    margin-top: 5rem;
+}
+
+.contenedor_footer__slogan {
+    order: 4;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+.contenedor_footer__mapa {
+    order: 2;
+    height: 100%;
+}
+
+.contenedor_footer__redes {
+    order: 5;
+    list-style-type: none;
+    font-size: 5rem;
+    margin-top: 1rem;
+
+}
+
+.contenedor_footer__redes li {
+    display: inline-block;
+    margin-left: 5rem;
+}
+
+.contenedor_footer__redes a {
+    text-decoration: none;
+    color: #DBE2EF;
+}
+
+.contenedor_footer__contacto {
+    order: 3;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.contenedor_footer__contacto h3 {
+    color: #DBE2EF;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor_footer__contacto ul {
+    list-style-type: none;
+    font-weight: lighter;
+    font-size: 1.8rem;
+}
+
+
+.contenedor_footer__contacto li {
+    color: #DBE2EF;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ----- Clases generales de las secciones ----- */
+
+.presentacion_secciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* padding: 30rem 0rem 0rem 60rem; */
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    text-align: center;
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #F9F7F7;
+    background-color: rgba(0, 0, 0, 0.736);
+}
+
+
+/* ----- Propiedades ----- */
+
+.presentacion_secciones--propiedades {
+    background-image: url(imagenes/propiedades.jpg);
+}
+
+.titulo--propiedades {
+    width: 32rem;
+}
+
+.contenedor--propiedades {
+    display: block;
+    padding: 7rem 0rem 0rem 10rem;
+}
+
+.contenedor__titulo--spropiedades_a {
+    font-size: 2vw;
+}
+
+.contenedor__spropiedades {
+    display: flex;
+    font-size: 1.3vw;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.contenedor__imagen_propiedad_1 {
+    height: 70vh;
+}
+
+.contenedor__parrafo--spropiedades_a {
+    margin-left: 15rem;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.contenedor__titulo--spropiedades_b {
+    font-size: 2vw;
+}
+
+.contenedor__imagen_propiedad_2 {
+    height: 70vh;
+    margin-right: 10rem;
+}
+
+.contenedor__parrafo--spropiedades_b {
+    width: 50%;
+    margin-right: 15rem;
+    margin-top: 2rem;
+}
+
+.contenedor__imagen_propiedad_3 {
+    height: 60vh;
+}
+
+.contenedor__parrafo--spropiedades_c {
+    width: 45%;
+    margin-left: 15rem;
+    margin-top: 2rem;
+}
+
+
+/* ----- Inversiones ----- */
+
+.presentacion_secciones--inversiones {
+    background-image: url(imagenes/inversiones.jpeg);
+}
+
+.titulo--inversiones {
+    width: 30rem;
+}
+
+.contenedor--inversiones {
+    display: block;
+    padding: 7rem 0rem 0rem 10rem;
+}
+
+.contenedor__titulo--sinversiones {
+    font-size: 3rem;
+}
+
+.contenedor__sinversiones {
+    display: flex;
+    font-size: 1.3vw;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedor__parrafo--sinversiones {
+    margin-right: 10rem;
+
+}
+
+.contenedor__imagen_sinversiones {
+    height: 60vh;
+    margin-right: 5rem;
+}
+
+
+/* ----- Nosotros ----- */
+
+.presentacion_secciones--nosotros {
+    background-image: url(imagenes/nosotros.jpg);
+}
+
+.titulo--nosotros {
+    width: 25rem;
+}
+
+.contenedor--nosotros {
+    height: 110vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem;
+}
+
+.contenedor__titulo--snosotros {
+    font-size: 4rem;
+}
+
+.contenedor__lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+}
+
+.contenedor__lista li {
+    margin-left: 20rem;
+    margin-bottom: 5rem;
+    list-style: none;
+}
+
+.contenedor__lista li p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 0.5rem;
+    margin-left: 3.5rem;
+}
+
+.contenedor__lista li img {
+    height: 15vw;
+    margin-bottom: 1rem;
+}
+
+
+/* ----- Contacto ----- */
+
+.presentacion_secciones--contacto {
+    background-image: url(imagenes/contacto.jpg)
+}
+
+.titulo--contacto {
+    width: 25rem;
+}
+
+.contenedor--contacto{
+    display:block;
+    padding: 5rem;
+}
+
+.contenedor__parrafo--contacto {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedor__formulario {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3vw;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedor__formulario li {
+    margin-bottom: 6rem;
+}
+
+.contenedor__formulario button {
+    width: 10%;
+
+}
+
+
+
+/* ----- Estilos mobile ----- */
+
+/* ----- Header mobile -----  */
+@media screen and (max-width:450px){
+    .barra__navegacion li {
+        font-size: 1.4rem;
+    }
+}
+
+/* ----- Footer mobile -----  */
+
+@media screen and (min-width:451px) and (max-width:960px) {
+    .contenedor_footer {
+        display: grid;
+        justify-items: center;
+        column-gap: 9%;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3,1fr);
+        background-color: #112D4E;
+        padding: 2rem;
+    }
+    
+    .contenedor_footer__logo_a {
+        order: 1;
+    }
+    
+    .contenedor_footer__mapa {
+        order: 2;
+    }
+
+    .contenedor_footer__slogan {
+        order: 3;
+    }
+    
+    .contenedor_footer__redes {
+        order: 4;
+    }
+    
+    .contenedor_footer__contacto {
+        order: 5;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contenedor_footer {
+        display: grid;
+        justify-items: center;
+        column-gap: 9%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        background-color: #112D4E;
+        padding: 2rem;
+    }
+
+    .contenedor_footer__logo_a {
+        order: 1;
+    }
+    
+    .contenedor_footer__slogan {
+        order: 2;
+        width: 50%;
+    }
+
+    .contenedor_footer__mapa {
+        order: 3;
+    }
+    
+    .contenedor_footer__redes {
+        order: 4;
+    }
+    
+    .contenedor_footer__contacto {
+        order: 5;
+    }
+}
+
+/* ----- Nosotros mobile -----  */
+
+    @media screen and (min-width:451px) and (max-width:960px) {
+        .contenedor__lista {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 450px) {
+        .contenedor__lista {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            width: 100%;
+        }
+    }
