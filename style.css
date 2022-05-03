@@ -451,6 +451,52 @@ html {
 
 }
 
+/* ----- Transformaciones Hover ----- */
+.barra__navegacion--opcion:hover{
+    background-color: rgba(221, 221, 221, 0.2);
+}
+
+.contenedor__titulo--propiedades a{
+    transition-property: all;
+    transition: all 0.5s ease-in-out;
+}
+
+.contenedor__titulo--propiedades a:hover{
+    transform: scale(1.03);
+    color: rgb(49, 49, 49)
+}
+
+.contenedor__titulo--inversiones a{
+    transition-property: all;
+    transition: all 0.5s ease-in-out;
+}
+
+.contenedor__titulo--inversiones a:hover{
+    transform: scale(1.03);
+    color: rgb(49, 49, 49)
+}
+
+.contenedor_footer__redes a:hover{
+    color: #b1b8c1;
+}
+
+/* ----- Animaciones ----- */
+.titulo{
+    animation: animacionTitulo 3s;
+}
+
+@keyframes animacionTitulo{
+    0%{
+        transform: translateY(-200px);
+        color: #f9f7f700;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        transform: translateY(0px);
+        color: #F9F7F7;
+        background-color: rgba(0, 0, 0, 0.736);
+    }
+}
 
 
 /* ----- Estilos mobile ----- */
