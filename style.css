@@ -191,19 +191,23 @@ html {
 .contenedor_footer__mapa {
     order: 2;
     height: 100%;
+    height:185px;
+    width: 600px;
 }
 
 .contenedor_footer__redes {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
     order: 5;
     list-style-type: none;
     font-size: 5rem;
-    margin-top: 1rem;
 
 }
 
 .contenedor_footer__redes li {
-    display: inline-block;
-    margin-left: 5rem;
+    margin: 0 2.5rem;
+    align-items: center;
 }
 
 .contenedor_footer__redes a {
@@ -387,6 +391,7 @@ html {
 
 .contenedor__lista {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 100%;
@@ -400,9 +405,10 @@ html {
 
 .contenedor__lista li p {
     font-family: 'Nunito', sans-serif;
-    font-size: 2vw;
+    font-size: 1.7vw;
+    text-align: center;
     margin-bottom: 0.5rem;
-    margin-left: 3.5rem;
+
 }
 
 .contenedor__lista li img {
@@ -501,54 +507,29 @@ html {
 
 /* ----- Estilos mobile ----- */
 
-/* ----- Header mobile -----  */
-@media screen and (max-width:450px){
+/* ----- Header y Footer mobile -----  */
+
+@media screen and (max-width:765px){
+
+    .logo_a {
+        height: 6.5rem;
+    }
+
+    .barra__navegacion ul {
+        flex-direction: column;
+        align-items: left;
+        margin-right: 2rem;
+    }
     .barra__navegacion li {
         font-size: 1.4rem;
+        margin-top: 0.5rem;
     }
-}
-
-/* ----- Footer mobile -----  */
-
-@media screen and (min-width:451px) and (max-width:960px) {
-    .contenedor_footer {
-        display: grid;
-        justify-items: center;
-        column-gap: 9%;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(3,1fr);
-        background-color: #112D4E;
-        padding: 2rem;
-    }
-    
-    .contenedor_footer__logo_a {
-        order: 1;
-    }
-    
-    .contenedor_footer__mapa {
-        order: 2;
-    }
-
-    .contenedor_footer__slogan {
-        order: 3;
-    }
-    
-    .contenedor_footer__redes {
-        order: 4;
-    }
-    
-    .contenedor_footer__contacto {
-        order: 5;
-    }
-}
-
-@media screen and (max-width: 450px) {
     .contenedor_footer {
         display: grid;
         justify-items: center;
         column-gap: 9%;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5,1fr);
+        grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr ;
         background-color: #112D4E;
         padding: 2rem;
     }
@@ -559,11 +540,13 @@ html {
     
     .contenedor_footer__slogan {
         order: 2;
-        width: 50%;
     }
 
     .contenedor_footer__mapa {
-        order: 3;
+        /*  width: 200; */
+         order: 3;
+         height:185px;
+         width: 300px;
     }
     
     .contenedor_footer__redes {
@@ -575,22 +558,170 @@ html {
     }
 }
 
-/* ----- Nosotros mobile -----  */
+@media screen and (min-width:766px) and (max-width:1346px) {
+    .logo_a{
+        height: 4rem;
+    }
 
-    @media screen and (min-width:451px) and (max-width:960px) {
-        .contenedor__lista {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(3, 1fr);
-            width: 100%;
-        }
+    .contenedor_footer {
+        display: grid;
+        justify-items: center;
+        column-gap: 9%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr;
+        background-color: #112D4E;
+        padding: 2rem;
     }
     
-    @media screen and (max-width: 450px) {
-        .contenedor__lista {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5, 1fr);
-            width: 100%;
-        }
+    .contenedor_footer__logo_a {
+        order: 1;
     }
+    
+    .contenedor_footer__mapa {
+        /*  width: 200; */
+         order: 2;
+         height:185px;
+         width: 400px;
+     }
+
+    .contenedor_footer__slogan {
+        order: 3;
+    }
+    
+    .contenedor_footer__redes {
+        order: 4;
+    }
+    
+    .contenedor_footer__contacto {
+        order: 5;
+    }
+
+
+}
+
+
+/* ----- Main mobile -----  */
+
+@media screen and (max-width:765px){
+
+    .presentacion{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .logo_b {
+        height: 40vw;
+        margin-top: 10rem;
+    }
+
+    .presentacion__slogan {
+        font-size: 5vw;
+        width: 80%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.736);
+    }
+
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .contenedor__propiedades{
+        margin-top: 3rem;
+        width: 60vw;
+        font-size: 1.2rem;
+        margin-left: 0rem;
+    }
+
+    .contenedor__imagen_propiedad{
+        height: 50vh;
+    }
+
+    .contenedor__imagen_inversiones{
+        height: 40vh;
+    }
+    
+    .contenedor__inversiones{
+        margin-top: 3rem;
+        width: 60vw;
+        font-size: 1.2rem;
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (min-width:766px) and (max-width:1346px) {
+
+    .contenedor__imagen_propiedad{
+        height: 50vw;
+    }
+
+    .contenedor__propiedades{
+        font-size: 1.5vw;
+    }
+
+    .contenedor__imagen_inversiones{
+        height: 42vw;
+    }
+    
+    .contenedor__inversiones{
+        margin-right: 6.5rem;
+        font-size: 1.7vw;
+    }
+
+    .contenedor__titulo--inversiones{
+        text-align: left;
+    }
+}
+
+
+/* ----- Nosotros mobile -----  */
+
+@media screen and (max-width: 765px) {
+
+    .contenedor--nosotros{
+        justify-content: center;
+        height: auto;
+        padding: 5rem;
+    }
+
+    .contenedor__lista {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .contenedor__lista li{
+        margin-left: 0;
+    }
+
+    .contenedor__lista li img {
+        height: 25vw;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width:766px) and (max-width:1346px) {
+
+    .contenedor--nosotros{
+        height: auto;
+        justify-content: center;
+    }
+
+    .contenedor__lista {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr); 
+    }
+
+    .contenedor__lista li{
+        margin-left: 0;
+    }
+
+    .contenedor__lista li img {
+        height: 25vw;
+        margin-bottom: 1rem;
+    }
+}
