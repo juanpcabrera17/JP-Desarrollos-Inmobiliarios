@@ -17,55 +17,41 @@ html {
 
 .barra {
     background-color: #3F72AF;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    padding: 0.5rem 0rem;
+    padding-right: 3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
     z-index: 2;
+    position: fixed;
+    width: 100%;
 }
 
 .logo_a {
-    height: 5rem;
+    height: 5rem;   
     margin-left: 2rem;
 }
 
 .barra__navegacion {
-    display: flex;
-    list-style-type: none;
-    font-family: 'Nunito', sans-serif;
-}
-
-.barra__navegacion ul {
-    display: flex;
-    margin-right: 5rem;
-    flex-direction: row;
-}
-
-.barra__navegacion li {
-    display: flex;
     font-size: 2rem;
-    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* se destaca con otro color el elemento de navegacion de la pagina actual */
-.barra__navegacion--actual {
-    background-color: rgba(0, 0, 0, 0.2);
-
-}
-
-.barra__navegacion--opcion {
+.barra__navegacion__item {
     background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 1rem;
 }
 
-.barra__navegacion a {
-    padding: 0.6rem 1rem;
-    text-decoration: none;
-    color: black;
+.barra__navegacion__dropdown_menu {
+    background-color: rgb(101.4 142.2 191);
+    width: 100%;
+    border: none;
+    border-radius: 0;
 }
 
-
+.barra__navegacion__dropdown_item {
+    font-size: 1.6rem;
+}
 
 /* ----- MAIN ----- */
 
@@ -108,6 +94,7 @@ html {
 }
 
 .contenedor__imagen_propiedad {
+    width: 100%;
     display: flex;
     height: 70vh;
 }
@@ -143,6 +130,7 @@ html {
 }
 
 .contenedor__imagen_inversiones {
+    width: 100%;
     display: flex;
     height: 70vh;
 }
@@ -174,7 +162,7 @@ html {
 }
 
 .contenedor_footer__logo_a {
-/*     order: 1; */
+    /*     order: 1; */
     height: 9rem;
     margin-top: 5rem;
 }
@@ -191,7 +179,7 @@ html {
 .contenedor_footer__mapa {
     order: 2;
     height: 100%;
-    height:185px;
+    height: 185px;
     width: 600px;
 }
 
@@ -379,40 +367,27 @@ html {
 }
 
 .contenedor--nosotros {
-    height: 110vh;
+    height: 100%;
     flex-direction: column;
     align-items: flex-start;
     padding: 5rem;
+/*     width: 100%; */
 }
 
 .contenedor__titulo--snosotros {
     font-size: 4rem;
 }
 
-.contenedor__lista {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-}
-
-.contenedor__lista li {
-    margin-left: 20rem;
-    margin-bottom: 5rem;
-    list-style: none;
-}
-
-.contenedor__lista li p {
+.contenedor__nosotros__item{
     font-family: 'Nunito', sans-serif;
     font-size: 1.7vw;
     text-align: center;
     margin-bottom: 0.5rem;
-
+    padding: 2rem 7rem;
 }
 
-.contenedor__lista li img {
-    height: 15vw;
+.contenedor__nosotros__item img {
+    height: 17vw;
     margin-bottom: 1rem;
 }
 
@@ -427,8 +402,8 @@ html {
     width: 25rem;
 }
 
-.contenedor--contacto{
-    display:block;
+.contenedor--contacto {
+    display: block;
     padding: 5rem;
 }
 
@@ -458,46 +433,61 @@ html {
 }
 
 /* ----- Transformaciones Hover ----- */
-.barra__navegacion--opcion:hover{
+.barra__navegacion__item:hover {
     background-color: rgba(221, 221, 221, 0.2);
 }
 
-.contenedor__titulo--propiedades a{
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+    .navbar .nav-item:hover .nav-link {}
+    
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.contenedor__titulo--propiedades a {
     transition-property: all;
     transition: all 0.5s ease-in-out;
 }
 
-.contenedor__titulo--propiedades a:hover{
+.contenedor__titulo--propiedades a:hover {
     transform: scale(1.03);
     color: rgb(49, 49, 49)
 }
 
-.contenedor__titulo--inversiones a{
+.contenedor__titulo--inversiones a {
     transition-property: all;
     transition: all 0.5s ease-in-out;
 }
 
-.contenedor__titulo--inversiones a:hover{
+.contenedor__titulo--inversiones a:hover {
     transform: scale(1.03);
     color: rgb(49, 49, 49)
 }
 
-.contenedor_footer__redes a:hover{
+.contenedor_footer__redes a:hover {
     color: #b1b8c1;
 }
 
 /* ----- Animaciones ----- */
-.titulo{
+.titulo {
     animation: animacionTitulo 3s;
 }
 
-@keyframes animacionTitulo{
-    0%{
+@keyframes animacionTitulo {
+    0% {
         transform: translateY(-200px);
         color: #f9f7f700;
         background-color: rgba(0, 0, 0, 0);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
         color: #F9F7F7;
         background-color: rgba(0, 0, 0, 0.736);
@@ -509,27 +499,18 @@ html {
 
 /* ----- Header y Footer mobile -----  */
 
-@media screen and (max-width:765px){
+@media screen and (max-width:765px) {
 
     .logo_a {
         height: 6.5rem;
     }
 
-    .barra__navegacion ul {
-        flex-direction: column;
-        align-items: left;
-        margin-right: 2rem;
-    }
-    .barra__navegacion li {
-        font-size: 1.4rem;
-        margin-top: 0.5rem;
-    }
     .contenedor_footer {
         display: grid;
         justify-items: center;
         column-gap: 9%;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
         background-color: #112D4E;
         padding: 2rem;
     }
@@ -537,29 +518,29 @@ html {
     .contenedor_footer__logo_a {
         order: 1;
     }
-    
+
     .contenedor_footer__slogan {
         order: 2;
     }
 
     .contenedor_footer__mapa {
         /*  width: 200; */
-         order: 3;
-         height:185px;
-         width: 300px;
+        order: 3;
+        height: 185px;
+        width: 300px;
     }
-    
+
     .contenedor_footer__redes {
         order: 4;
     }
-    
+
     .contenedor_footer__contacto {
         order: 5;
     }
 }
 
 @media screen and (min-width:766px) and (max-width:1346px) {
-    .logo_a{
+    .logo_a {
         height: 4rem;
     }
 
@@ -572,26 +553,26 @@ html {
         background-color: #112D4E;
         padding: 2rem;
     }
-    
+
     .contenedor_footer__logo_a {
         order: 1;
     }
-    
+
     .contenedor_footer__mapa {
         /*  width: 200; */
-         order: 2;
-         height:185px;
-         width: 400px;
-     }
+        order: 2;
+        height: 185px;
+        width: 400px;
+    }
 
     .contenedor_footer__slogan {
         order: 3;
     }
-    
+
     .contenedor_footer__redes {
         order: 4;
     }
-    
+
     .contenedor_footer__contacto {
         order: 5;
     }
@@ -602,9 +583,9 @@ html {
 
 /* ----- Main mobile -----  */
 
-@media screen and (max-width:765px){
+@media screen and (max-width:765px) {
 
-    .presentacion{
+    .presentacion {
         flex-direction: column;
         justify-content: space-evenly;
     }
@@ -621,31 +602,36 @@ html {
         background-color: rgba(0, 0, 0, 0.736);
     }
 
-    .contenedor{
+    .contenedor {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 0;
-        padding: 0;
+        padding: 7rem;
     }
 
-    .contenedor__propiedades{
-        margin-top: 3rem;
-        width: 60vw;
+    .contenedor--celeste{
+        justify-content: space-evenly;
+  /*       height: 80vh; */
+    }
+
+    .contenedor__propiedades {
         font-size: 1.2rem;
         margin-left: 0rem;
     }
 
-    .contenedor__imagen_propiedad{
-        height: 50vh;
+    .contenedor__imagen_propiedad {
+        width: 32vw;
+        height: auto;
+        margin-bottom: 5rem;
     }
 
-    .contenedor__imagen_inversiones{
-        height: 40vh;
+    .contenedor__imagen_inversiones {
+        width: 39vw;
+        height: auto;
+        margin-bottom: 5rem;
     }
-    
-    .contenedor__inversiones{
-        margin-top: 3rem;
+
+    .contenedor__inversiones {
         width: 60vw;
         font-size: 1.2rem;
         margin-right: 0rem;
@@ -654,74 +640,45 @@ html {
 
 @media screen and (min-width:766px) and (max-width:1346px) {
 
-    .contenedor__imagen_propiedad{
-        height: 50vw;
+    .contenedor__imagen_propiedad {
+        height: auto;
     }
 
-    .contenedor__propiedades{
+    .contenedor__propiedades {
         font-size: 1.5vw;
     }
 
-    .contenedor__imagen_inversiones{
+    .contenedor__imagen_inversiones {
         height: 42vw;
     }
-    
-    .contenedor__inversiones{
+
+    .contenedor__inversiones {
         margin-right: 6.5rem;
         font-size: 1.7vw;
     }
 
-    .contenedor__titulo--inversiones{
+    .contenedor__titulo--inversiones {
         text-align: left;
     }
 }
 
-
 /* ----- Nosotros mobile -----  */
 
-@media screen and (max-width: 765px) {
-
-    .contenedor--nosotros{
-        justify-content: center;
-        height: auto;
-        padding: 5rem;
-    }
-
-    .contenedor__lista {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .contenedor__lista li{
-        margin-left: 0;
-    }
-
-    .contenedor__lista li img {
-        height: 25vw;
-        margin-bottom: 1rem;
-    }
+@media screen and (max-width:765px) {
+.contenedor__titulo--snosotros{
+    font-size: 3rem;
 }
 
-@media screen and (min-width:766px) and (max-width:1346px) {
+.contenedor__nosotros__item{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding: 2rem 5rem;
+}
 
-    .contenedor--nosotros{
-        height: auto;
-        justify-content: center;
-    }
-
-    .contenedor__lista {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr); 
-    }
-
-    .contenedor__lista li{
-        margin-left: 0;
-    }
-
-    .contenedor__lista li img {
-        height: 25vw;
-        margin-bottom: 1rem;
-    }
+.contenedor__nosotros__item img {
+    height: 15rem;
+    margin-bottom: 1rem;
+}
 }
