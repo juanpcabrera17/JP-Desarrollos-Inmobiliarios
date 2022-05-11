@@ -53,6 +53,15 @@ html {
     font-size: 1.6rem;
 }
 
+.barra__navegacion__dropdown_item:hover {
+    background-color: #3F72AF;
+}
+
+.barra__navegacion__dropdown_item:active {
+    background-color: #427bc0;
+    color: black;
+}
+
 /* ----- MAIN ----- */
 
 .presentacion {
@@ -682,3 +691,4 @@ html {
     margin-bottom: 1rem;
 }
 }
+
