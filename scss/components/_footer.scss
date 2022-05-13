@@ -1,0 +1,144 @@
+@import '../base/variables';
+@import '../base/listas';
+
+.separador {
+    height: 6vh;
+    background-color: nth($colores, 3);
+}
+
+.contenedor_footer {
+    display: grid;
+    justify-items: center;
+    column-gap: 9%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3fr 1fr;
+    background-color: nth($colores, 4);
+    padding: 2rem;
+
+    &__logo_a {
+        height: 9rem;
+        margin-top: 5rem;
+    }
+
+    &__slogan {
+        order: 4;
+        font-size: 2rem;
+        text-align: center;
+        font-family: $font-main;
+        font-style: italic;
+        color: white;
+    }
+
+    &__mapa {
+        order: 2;
+        height: 100%;
+        height: 185px;
+        width: 600px;
+    }
+
+    &__redes {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        order: 5;
+        list-style-type: none;
+        font-size: 5rem;
+
+        & li {
+            margin: 0 2.5rem;
+            align-items: center;
+
+            & a {
+                text-decoration: none;
+                color: nth($colores, 2);
+                &:hover{
+                    color: #b1b8c1;
+                }
+            }
+        }
+    }
+    &__contacto {
+        order: 3;
+        font-family: $font-main;
+        font-weight: bold;
+
+        & h3 {
+            color: nth($colores, 2);
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        & ul {
+            list-style-type: none;
+            font-weight: lighter;
+            font-size: 1.8rem;
+            & li{
+                color: nth($colores, 2);
+                margin-bottom: 1rem;
+            }
+        }
+    }    
+}
+
+
+@media screen and (max-width:765px){
+    .contenedor_footer {
+        display: grid;
+        justify-items: center;
+        column-gap: 9%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
+        background-color: nth($colores, 4);
+        padding: 2rem;
+        &__logo_a{
+            order: 1;
+        }
+        &__slogan{
+            order: 2;
+        }
+        &__mapa{
+            order: 3;
+            height: 185px;
+            width: 300px;
+        }
+        &__redes{
+            order: 4;
+        }
+        &__contacto{
+            order: 5;
+        }
+    }
+}
+
+@media screen and (min-width:766px) and (max-width:1346px){
+    .logo_a {
+        height: 4rem;
+    }
+
+    .contenedor_footer {
+        display: grid;
+        justify-items: center;
+        column-gap: 9%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 1fr;
+        background-color: nth($colores, 4);
+        padding: 2rem;
+        &__logo_a{
+            order: 1;
+        }
+        &__mapa{
+            order: 2;
+            height: 185px;
+            width: 300px;
+        }
+        &__slogan{
+            order: 3;
+        }
+        &__redes{
+            order: 4;
+        }
+        &__contacto{
+            order: 5;
+        }
+    }
+}

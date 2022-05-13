@@ -18,7 +18,7 @@ html {
 .barra {
     background-color: #3F72AF;
     padding-right: 3rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     font-weight: 500;
     z-index: 2;
     position: fixed;
@@ -85,7 +85,7 @@ html {
     font-size: 3vw;
     width: 50%;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     font-weight: 600;
     font-style: italic;
 }
@@ -111,7 +111,7 @@ html {
 .contenedor__titulo {
     display: flex;
     font-size: 4vw;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     font-weight: bold;
     margin-bottom: 5rem;
 }
@@ -126,7 +126,7 @@ html {
     flex-direction: column;
     font-size: 1.3vw;
     text-align: justify;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     margin-left: 10rem;
 }
 
@@ -150,7 +150,7 @@ html {
     flex-direction: column;
     font-size: 1.3vw;
     text-align: justify;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
 }
 
 /* ----- FOOTER ----- */
@@ -180,7 +180,7 @@ html {
     order: 4;
     font-size: 2rem;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     font-style: italic;
     color: white;
 }
@@ -214,7 +214,7 @@ html {
 
 .contenedor_footer__contacto {
     order: 3;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     font-weight: bold;
 }
 
@@ -258,7 +258,7 @@ html {
     font-size: 5rem;
     text-align: center;
     position: absolute;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     font-weight: 700;
     color: #F9F7F7;
     background-color: rgba(0, 0, 0, 0.736);
@@ -288,7 +288,7 @@ html {
     display: flex;
     font-size: 1.3vw;
     text-align: justify;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
 }
 
 
@@ -351,7 +351,7 @@ html {
     display: flex;
     font-size: 1.3vw;
     text-align: justify;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
 }
 
 .contenedor__parrafo--sinversiones {
@@ -388,7 +388,7 @@ html {
 }
 
 .contenedor__nosotros__item{
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     font-size: 1.7vw;
     text-align: center;
     margin-bottom: 0.5rem;
@@ -420,7 +420,7 @@ html {
     margin-bottom: 5rem;
     text-align: center;
     font-size: 1.3vw;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
 }
 
 .contenedor__formulario {
@@ -429,7 +429,7 @@ html {
     flex-direction: column;
     font-size: 1.3vw;
     text-align: justify;
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
 }
 
 .contenedor__formulario li {
@@ -679,7 +679,7 @@ html {
 }
 
 .contenedor__nosotros__item{
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-main;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 0.5rem;

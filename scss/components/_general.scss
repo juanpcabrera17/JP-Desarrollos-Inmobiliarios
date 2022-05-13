@@ -1,0 +1,98 @@
+@import '../base/variables';
+@import '../base/listas';
+
+.contenedor{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+
+    &--beige {
+        background-color: nth($colores, 1);
+    }
+    &--celeste{
+        background-color: nth($colores, 2);
+    }
+    &--inverso{
+        flex-direction: row-reverse;
+    }
+    &__titulo{
+        display: flex;
+        font-size: 4vw;
+        font-family: $font-main;
+        font-weight: bold;
+        margin-bottom: 5rem;
+        & a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.presentacion_secciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-position: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    text-align: center;
+    position: absolute;
+    font-family: $font-main;
+    font-weight: 700;
+    color: nth($colores, 1);
+    background-color: rgba(0, 0, 0, 0.736);
+    animation: animacionTitulo 3s;
+}
+
+@keyframes animacionTitulo {
+    0% {
+        transform: translateY(-200px);
+        color: #f9f7f700;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: translateY(0px);
+        color: nth($colores, 1);
+        background-color: rgba(0, 0, 0, 0.736);
+    }
+}
+
+
+@media screen and (max-width:765px) {
+
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 7rem;
+        &--celeste{
+            justify-content: space-evenly;
+        }
+        &--inverso{
+            flex-direction: row-reverse;
+        }
+        &__titulo{
+            display: flex;
+            font-size: 4vw;
+            font-family: $font-main;
+            font-weight: bold;
+            margin-bottom: 5rem;
+            & a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+}

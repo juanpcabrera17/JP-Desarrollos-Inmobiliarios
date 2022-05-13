@@ -1,0 +1,20 @@
+{
+  "name": "entregable_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch scss/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanpcabrera17/JP-Desarrollos-Inmoviliarios.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanpcabrera17/JP-Desarrollos-Inmoviliarios/issues"
+  },
+  "homepage": "https://github.com/juanpcabrera17/JP-Desarrollos-Inmoviliarios#readme"
+}
