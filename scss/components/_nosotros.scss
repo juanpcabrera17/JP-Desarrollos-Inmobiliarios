@@ -1,9 +1,8 @@
-@import '../base/reset';
 @import '../base/variables';
 @import '../base/listas';
 
 .presentacion_secciones--nosotros {
-    background-image: url(/imagenes/nosotros.jpg);
+    background-image: url(../../imagenes/nosotros.jpg);
 
     .titulo--nosotros {
         width: 25rem;

@@ -1,0 +1,174 @@
+@import '../base/variables';
+@import '../base/listas';
+
+.presentacion_secciones--propiedades {
+    background-image: url(../../imagenes/propiedades.jpg);
+
+    .titulo--propiedades {
+        width: 32rem;
+    }
+}
+
+.contenedor--propiedades {
+    display: block;
+    padding: 7rem 10rem 0rem 10rem;
+
+    .contenedor__titulo--spropiedades_a {
+        font-size: 2vw;
+    }
+
+    .contenedor__spropiedades {
+        display: flex;
+        font-size: 1.3vw;
+        text-align: justify;
+        font-family: 'Nunito', sans-serif;
+
+        .contenedor__imagen_propiedad_1 {
+            height: 70vh;
+        }
+
+        .contenedor__parrafo--spropiedades_a {
+            margin-left: 15rem;
+            margin-top: 2rem;
+            width: 50%;
+        }
+    }
+}
+
+.contenedor--propiedades {
+    .contenedor__titulo--spropiedades_b {
+        font-size: 2vw;
+    }
+
+    .contenedor--inverso {
+        .contenedor__imagen_propiedad_2 {
+            height: 70vh;
+            margin-right: 10rem;
+        }
+
+        .contenedor__parrafo--spropiedades_b {
+            width: 50%;
+            margin-right: 15rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.contenedor--propiedades {
+    .contenedor__spropiedades {
+        .contenedor__imagen_propiedad_3 {
+            height: 60vh;
+        }
+
+        .contenedor__parrafo--spropiedades_c {
+            width: 45%;
+            margin-left: 15rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width:765px) {
+    .contenedor--propiedades {
+        padding: 5rem;
+        .contenedor__titulo--spropiedades_a {
+            font-size: 2rem;
+        }
+
+        .contenedor__spropiedades {
+            flex-direction: column;
+            align-items: center;
+
+            .contenedor__imagen_propiedad_1 {
+                width: 20rem;
+                height: auto;
+                padding-bottom: 5rem;
+
+            }
+
+            .contenedor__parrafo--spropiedades_a {
+                margin: 0;
+                font-size: 1.3rem;
+                width: 100%;
+            }
+        }
+    }
+
+    .contenedor--propiedades {
+        .contenedor__titulo--spropiedades_b {
+            font-size: 2rem;
+        }
+
+        .contenedor__spropiedades {
+            .contenedor__imagen_propiedad_2 {
+                width: 30rem;
+                height: auto;
+                padding-bottom: 5rem;
+                margin: 0;
+            }
+
+            .contenedor__parrafo--spropiedades_b {
+                margin: 0;
+                font-size: 1.3rem;
+                width: 100%;
+            }
+        }
+    }
+
+    .contenedor--propiedades{
+        .contenedor__spropiedades{
+            .contenedor__imagen_propiedad_3{
+                width: 35rem;
+                height: auto;
+                padding-bottom: 5rem;
+                margin: 0;
+            }
+            .contenedor__parrafo--spropiedades_c{
+                margin: 0;
+                font-size: 1.3rem;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:766px) and (max-width:1346px) {
+    .contenedor--propiedades {
+        .contenedor__spropiedades {
+            .contenedor__parrafo--spropiedades_a {
+                margin-left: 5rem;
+                margin-right: 5rem;
+                font-size: 1.5rem;
+                width: 100%;
+            }
+        }
+    }
+
+    .contenedor--propiedades {
+        .contenedor--inverso {
+            .contenedor__imagen_propiedad_2 {
+                height: 50vh;
+                margin-right: 5rem;
+            }
+
+            .contenedor__parrafo--spropiedades_b {
+                margin-right: 5rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .contenedor--propiedades{
+        padding: 7rem 0rem 0rem 10rem;
+        .contenedor__spropiedades{
+            .contenedor__imagen_propiedad_3{
+                height: 50vh;
+            }
+            .contenedor__parrafo--spropiedades_c{
+                margin-left: 5rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
