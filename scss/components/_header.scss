@@ -1,6 +1,7 @@
 @import '../base/variables';
 @import '../base/listas';
 
+
 .barra{
     background-color: nth($colores, 3);
     padding-right: 3rem;
@@ -42,6 +43,8 @@
         }
     }
 }
+
+
 @media screen and (max-width:765px){
     .logo_a{
         height: 6.5rem;

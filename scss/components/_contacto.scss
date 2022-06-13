@@ -1,6 +1,7 @@
 @import '../base/variables';
 @import '../base/listas';
 
+
 .presentacion_secciones--contacto {
     background-image: url(../../imagenes/contacto.jpg);
     .titulo--contacto {
@@ -9,33 +10,72 @@
 }
 
 .contenedor--contacto {
-    display: block;
-    padding: 5rem;
+    flex-direction: column;
+    padding: 7rem 0rem 7rem 12rem;
+    height: auto;
+    align-items: flex-start;
     .contenedor__parrafo--contacto {
         margin-bottom: 5rem;
         text-align: center;
-        font-size: 2rem;
-        font-family: 'Nunito', sans-serif;
+        font-size: 2.5rem;
+        font-family: $font-main;
     }
     .contenedor__formulario {
+        border: 2px solid nth($colores, 4);
+        border-radius: 2rem;
+        box-shadow: 1rem 10px 10px rgba(0, 0, 0, 0.118);
+        padding: 3rem 7rem;
         list-style-type: none;
         display: flex;
         flex-direction: column;
         font-size: 1.5rem;
         text-align: justify;
-        font-family: 'Nunito', sans-serif;
+        font-family: $font-main;
+        &__item{
+            font-size: 2rem;
+            margin-top: 2.5rem;
+            font-weight: $font-weight-bold;
+        }
         & li {
-            margin-bottom: 3.5rem;
+            margin-bottom: 2rem;
+            & input{
+                padding: 0.7rem;
+                border-style: none;
+                border-radius: 0.5rem;
+                margin-left: 2rem;
+                background-color: nth($colores, 2);
+                width: 25rem;
+            }
+            & textarea{
+                padding: 0.7rem;
+                border-style: none;
+                border-radius: 0.5rem;
+                margin-left: 2rem;
+                background-color: nth($colores, 2);
+                width: 100%;
+            }
         }
         & button {
-            width: 10%;
+            margin-top: 3rem;
+            width: 15%;
+            font-size: 1.5rem;
+            background-color: nth($colores, 3);
+            &:hover{
+                background-color: nth($colores, 4);
+            }
         }
     }
 }
 
+
 @media screen and (max-width:765px) {
     .contenedor--contacto {
-        height: 110vh;
+        height: auto;
+        padding: 4rem;
+        .contenedor__parrafo--contacto {
+            margin-bottom: 5rem;
+            font-size: 2rem;
+        }
         .contenedor__formulario {
             & li {
                 & textarea{
@@ -49,7 +89,15 @@
     }
 }
 
-
 @media screen and (min-width:766px) and (max-width:1346px) {
-
+    .contenedor--contacto {
+        padding: 7rem 5rem 7rem 12rem;
+        .contenedor__formulario {
+            & li {
+                & textarea{
+                    width: 80%;
+                }
+            }
+        }
+    }
 }

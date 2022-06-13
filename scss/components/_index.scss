@@ -5,7 +5,6 @@
 @import '../base/mixin';
 
 
-
 .presentacion {
     background-image: url(../../imagenes/fondo_1.jpg);
     background-attachment: fixed;
@@ -64,7 +63,6 @@
     }
 }
 
-/* transitions */
 .contenedor {
     &__titulo--propiedades a {
         transition-property: all;
@@ -86,6 +84,7 @@
         }
     }
 }
+
 
 @media screen and (max-width:765px) {
     .presentacion {
@@ -116,7 +115,7 @@
             margin-left: 0rem;
         }
         &__imagen_inversiones {
-            width: 39vw;
+            width: 42vw;
             height: auto;
             margin-bottom: 5rem;
         }
@@ -125,6 +124,9 @@
             width: 60vw;
             font-size: 1.2rem;
             margin-right: 0rem;
+        }
+        &--inverso{
+            flex-direction: column;
         }
     }
 }

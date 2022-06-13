@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alquilar e invertir en bienes raíces nunca fue tan sencillo | enterate de todas nuestras propuestas en nuestra pagina web">
     <meta name="keywords" content="alquilar, propiedades, casa, departamento, edificio, invertir, hogar, desarrollos inmobiliarios, inmueble">
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -15,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,600&display=swap"
         rel="stylesheet">
-    <!--iconos FontAwesome-->
     <script src="https://kit.fontawesome.com/1a57ba7d06.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="imagenes/logo_B.ico" type="image/x-icon">
     <title>JP Desarrollos Inmobiliarios | Contacto</title>
@@ -23,7 +21,6 @@
 
 <body>
     <header class="navbar navbar-expand-lg navbar-light barra">
-        <!-- barra -->
         <nav class="container-fluid">
             <a class="navbar-brand" href="index.html"><img class="logo_a" src="imagenes/logo_A.png" alt="Logo_A"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -31,7 +28,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse barra__navegacion" id="navbarNavDropdown">
-                <!-- barra navegacion -->
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown barra__navegacion__item barra__navegacion--propiedades"><a
                             class="nav-link" href="propiedades.html" id="navbarDropdownMenuLink" role="button"
@@ -39,11 +35,11 @@
                         <ul class="dropdown-menu barra__navegacion__dropdown_menu"
                             aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item barra__navegacion__dropdown_item"
-                                    href="/propiedades.html#propiedad-1">Propiedad-1</a></li>
+                                    href="/propiedades.html#propiedad-1">PH Bulevares</a></li>
                             <li><a class="dropdown-item barra__navegacion__dropdown_item"
-                                    href="/propiedades.html#propiedad-2">Propiedad-2</a></li>
+                                    href="/propiedades.html#propiedad-2">Rincón Puerto</a></li>
                             <li><a class="dropdown-item barra__navegacion__dropdown_item"
-                                    href="/propiedades.html#propiedad-3">Propiedad-3</a></li>
+                                    href="/propiedades.html#propiedad-3">Retiro de Sol</a></li>
                         </ul>
                     </li>
                     <li class="nav-item barra__navegacion__item"><a class="nav-link"
@@ -63,14 +59,18 @@
         </section>
 
         <section class="contenedor contenedor--beige contenedor--contacto">
-            <p class="contenedor__parrafo contenedor__parrafo--contacto">Gracias por contactar con nosotros, te
-                responderemos con la mayor brevedad posible</p>
+            <p class="contenedor__parrafo contenedor__parrafo--contacto">Gracias por contactanos, te
+                responderemos a la mayor brevedad.</p>
             <ul class="contenedor__formulario">
-                <li><input type="text" name="Nombre" value="Nombre" /></li>
-                <li><input type="email" name="Email" value="Email" /></li>
-                <li><input type="text" name="Telefono" value="Telefono" /></li>
-                <li><textarea name="mensaje" rows="10" cols="80">Mensaje</textarea></li>
-                <button>Enviar</button>
+                <li class="contenedor__formulario__item">Nombre</li>
+                <li><input type="text" name="Nombre" placeholder="Nombre completo" /></li>
+                <li class="contenedor__formulario__item">Email</li>
+                <li><input type="email" name="Email" placeholder="ejemplo@email.com" /></li>
+                <li class="contenedor__formulario__item">Teléfono</li>
+                <li><input type="text" name="Telefono" placeholder="Número de teléfono" /></li>
+                <li class="contenedor__formulario__item">Mensaje</li>
+                <li><textarea name="mensaje" rows="10" cols="80" placeholder="Ingrese su mensaje aquí"></textarea></li>
+                <button class="btn btn-primary " type="submit">Enviar</button>
             </ul>
 
         </section>
@@ -85,12 +85,11 @@
 
         <div class="contenedor_footer">
             <img class="contenedor_footer__logo_a" src="imagenes/logo_A.png" alt="Logo_A">
-            <!--Slogan de la empresa-->
-            <p class="contenedor_footer__slogan">"Lorem ipsum dolor sit amet consectetur, adipisicing elit"</p>
-            <!--Ubicacion de la empresa en google maps-->
+            <p class="contenedor_footer__slogan">"Acesoramiento integral para tus proyectos y necesidades inmobiliarias"
+            </p>
             <iframe class="contenedor_footer__mapa"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2214.1126620290734!2d-58.23406271808493!3d-32.48142545394532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1649192846362!5m2!1ses-419!2sar"
-                width="600" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <ul class="contenedor_footer__redes">
                 <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -103,12 +102,13 @@
             <div class="contenedor_footer__contacto">
                 <h3>Contacto</h3>
                 <ul>
-                    <li><strong>Email: </strong>ejemplo@ejemplo.com</li>
-                    <li><strong>Dirección: </strong>Ejemplo 1234</li>
-                    <li><strong>Teléfono: </strong>1234-123456</li>
+                    <li><strong>Email: </strong>jpdesarrollos@inmobiliarios.com</li>
+                    <li><strong>Dirección: </strong>Mitre 251 - Concepción del Uruguay - Entre Ríos</li>
+                    <li><strong>Teléfono: </strong>03442-123456</li>
             </div>
         </div>
     </footer>
+
     <!-- Bootstrap separate -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">

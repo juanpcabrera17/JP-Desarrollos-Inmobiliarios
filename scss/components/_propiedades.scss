@@ -1,6 +1,7 @@
 @import '../base/variables';
 @import '../base/listas';
 
+
 .presentacion_secciones--propiedades {
     background-image: url(../../imagenes/propiedades.jpg);
 
@@ -21,7 +22,7 @@
         display: flex;
         font-size: 1.3vw;
         text-align: justify;
-        font-family: 'Nunito', sans-serif;
+        font-family: $font-main;
 
         .contenedor__imagen_propiedad_1 {
             height: 70vh;
@@ -68,9 +69,12 @@
     }
 }
 
+
 @media screen and (max-width:765px) {
     .contenedor--propiedades {
         padding: 5rem;
+        display: flex;
+        height: auto;
         .contenedor__titulo--spropiedades_a {
             font-size: 2rem;
         }

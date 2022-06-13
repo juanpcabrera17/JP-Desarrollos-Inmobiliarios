@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juanpcabrera17/JP-Desarrollos-Inmoviliarios.git"
+    "url": "git+https://github.com/juanpcabrera17/JP-Desarrollos-inmobiliarios.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/juanpcabrera17/JP-Desarrollos-Inmoviliarios/issues"
+    "url": "https://github.com/juanpcabrera17/JP-Desarrollos-inmobiliarios/issues"
   },
-  "homepage": "https://github.com/juanpcabrera17/JP-Desarrollos-Inmoviliarios#readme"
+  "homepage": "https://github.com/juanpcabrera17/JP-Desarrollos-inmobiliarios#readme"
 }

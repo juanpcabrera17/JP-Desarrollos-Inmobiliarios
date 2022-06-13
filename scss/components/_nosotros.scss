@@ -1,6 +1,7 @@
 @import '../base/variables';
 @import '../base/listas';
 
+
 .presentacion_secciones--nosotros {
     background-image: url(../../imagenes/nosotros.jpg);
 
@@ -30,11 +31,10 @@
     }
 }
 
+
 @media screen and (max-width:765px) {
     .contenedor--nosotros {
-        .contenedor__titulo--snosotros {
-            font-size: 3rem;
-        }
+        align-items: center;
         .contenedor__nosotros__item{
             font-family: $font-main;
             font-size: 1.5rem;
